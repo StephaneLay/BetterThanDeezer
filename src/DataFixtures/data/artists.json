@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "The Rolling Stones", "description": "British rock band formed in 1962", "member_number": 5, "genre_id": 1 },
+  { "id": 2, "name": "Miles Davis", "description": "Legendary jazz trumpeter", "member_number": 1, "genre_id": 2 },
+  { "id": 3, "name": "Kendrick Lamar", "description": "American rapper and songwriter", "member_number": 1, "genre_id": 3 },
+  { "id": 4, "name": "Ludwig Orchestra", "description": "Classical music ensemble", "member_number": 40, "genre_id": 4 }
+]

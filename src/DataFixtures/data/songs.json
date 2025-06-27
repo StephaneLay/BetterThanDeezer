@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Gimme Shelter", "length_second": 270, "album_id": 1 },
+  { "id": 2, "name": "So What", "length_second": 545, "album_id": 2 },
+  { "id": 3, "name": "HUMBLE.", "length_second": 177, "album_id": 3 },
+  { "id": 4, "name": "Symphony No. 5", "length_second": 425, "album_id": 4 }
+]

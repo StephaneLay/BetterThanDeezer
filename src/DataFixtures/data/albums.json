@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Let It Bleed", "artist_id": 1, "created_at": "1969-12-05T00:00:00+00:00" },
+  { "id": 2, "name": "Kind of Blue", "artist_id": 2, "created_at": "1959-08-17T00:00:00+00:00" },
+  { "id": 3, "name": "DAMN.", "artist_id": 3, "created_at": "2017-04-14T00:00:00+00:00" },
+  { "id": 4, "name": "Beethoven: Symphonies", "artist_id": 4, "created_at": "2020-09-25T00:00:00+00:00" }
+]
