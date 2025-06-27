@@ -29,7 +29,6 @@
   { "id": 28, "name": "Coloring Book", "artist_id": 28, "created_at": "2016-05-13T00:00:00" },
   { "id": 29, "name": "Ella and Louis", "artist_id": 29, "created_at": "1956-08-27T00:00:00" },
   { "id": 30, "name": "Recess", "artist_id": 30, "created_at": "2014-03-18T00:00:00" },
-  // ... 20 albums supplémentaires (31–50) avec artistes déjà définis ...
   { "id": 31, "name": "The Wall", "artist_id": 4, "created_at": "1979-11-30T00:00:00" },
   { "id": 32, "name": "Come Away with Me", "artist_id": 26, "created_at": "2002-02-26T00:00:00" },
   { "id": 33, "name": "Metallica (Black Album)", "artist_id": 27, "created_at": "1991-08-12T00:00:00" },
