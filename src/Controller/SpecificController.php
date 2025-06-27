@@ -12,8 +12,10 @@ final class SpecificController extends AbstractController
     #[Route('/artists/{id}', name: 'artists')]
     public function artists(ArtistRepository $artistRepository,int $id): Response
     {
+        $artist = $artistRepository->find($id);
         return $this->render('specific/artists.html.twig', [
             'controller_name' => 'SpecificController',
+            'artist' => $artist
         ]);
     }
 
