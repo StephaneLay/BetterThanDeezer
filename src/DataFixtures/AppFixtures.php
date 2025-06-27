@@ -14,10 +14,10 @@ class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        $albums = json_decode(file_get_contents(__DIR__."/data/albums.json"), true);
-        $artists = json_decode(file_get_contents(__DIR__."/data/artists.json"), true);
-        $genres = json_decode(file_get_contents(__DIR__."/data/genres.json"), true);
-        $songs = json_decode(file_get_contents(__DIR__."/data/songs.json"), true);
+        $albums = json_decode(file_get_contents(__DIR__ . "/data/albums.json"), true);
+        $artists = json_decode(file_get_contents(__DIR__ . "/data/artists.json"), true);
+        $genres = json_decode(file_get_contents(__DIR__ . "/data/genres.json"), true);
+        $songs = json_decode(file_get_contents(__DIR__ . "/data/songs.json"), true);
 
         for ($i = 0; $i < count($albums); $i++) {
             $genre = new Genre();
