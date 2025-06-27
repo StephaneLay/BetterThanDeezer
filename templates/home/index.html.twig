@@ -20,9 +20,9 @@
         {% for song in songs %}
             <tr>
                 <td>{{ song.name }}</td>
-                <td><a href="/artists/{{ song.album.artist.id }}">{{ song.album.artist.name }}</a></td>
-                <td><a href="/albums/{{ song.album.artist.id }}">{{ song.album.name }}</a></td>
-                <td><a>{{ song.album.artist.genre.name }}</a></td>
+                <td><a href="{{path('artists',{ id: song.album.artist.id })}}">{{ song.album.artist.name }}</a></td>
+                <td><a href="{{path('albums',{ id: song.album.id })}}">{{ song.album.name }}</a></td>
+                <td><a href="{{path('genres',{ id: song.album.artist.genre.id })}}">{{ song.album.artist.genre.name }}</a></td>
                 <td>{% set minutes = song.lengthSecond // 60 %}
                     {% set seconds = song.lengthSecond % 60 %}
                     {{ minutes }}m {{ seconds }}s</td>
