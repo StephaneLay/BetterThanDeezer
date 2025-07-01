@@ -3,13 +3,16 @@
 {% block title %}Album Page{% endblock %}
 
 {% block body %}
-<hgroup>
-    <h2>{{album.name}}</h2>
+<div class="entity-container">
+<h2>{{album.name}}</h2>
     <p>Date de parution de l'album : {{album.createdAt|date('d/m/Y')}}</p>
     
     
 </hgroup>
 
     <a href="{{path('artists',{ id: album.artist.id })}}">{{album.artist.name}}</a>
+</div>
+<hgroup>
+    
 
 {% endblock %}

@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<h1>Bibliothèque musicale</h1>
+<h1>Better Than Deezer</h1>
 
 <table>
     <thead>
@@ -25,6 +25,9 @@
                 <td><a href="{{path('genres',{ id: song.album.artist.genre.id })}}">{{ song.album.artist.genre.name }}</a></td>
                 <td>{% set minutes = song.lengthSecond // 60 %}
                     {% set seconds = song.lengthSecond % 60 %}
+                    {% if seconds<10 %}
+                    {% set seconds = "0" ~ seconds %} 
+                    {% endif %}
                     {{ minutes }}m {{ seconds }}s</td>
             </tr>
         {% else %}

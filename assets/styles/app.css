@@ -2,6 +2,9 @@
 :root{
     font-family: "Montserrat", sans-serif;
     color: white;
+    font-weight: 200;
+    --secondary-color : rgb(155, 116, 195);
+    --title-color : #36494E;
 }
 
 body{
@@ -10,7 +13,7 @@ body{
 
 h1{
     font-size: 5em;
-    color: cadetblue;
+    color: var(--title-color);
     text-align: center;
 }
 
@@ -29,4 +32,41 @@ thead th{
 
 tbody td{
     padding-top : 1rem;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+li{
+    list-style: none;
+}
+
+.artists-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+}
+
+.artists-list>*{
+    margin: 2rem;
+    font-size: 1.5em;
+}
+
+.entity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+}
+
+hgroup{
+    padding: 1rem;
+    text-align: center;
 }

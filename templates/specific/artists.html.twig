@@ -4,6 +4,7 @@
 
 {% block body %}
 
+<div class="entity-container">
 <hgroup>
     <h2>{{artist.name}}</h2>
     <p>Nombre albums :{{artist.albums|length}}</p>
@@ -13,7 +14,9 @@
 
     <p>{{artist.description}}</p>
     <p>{{artist.memberNumber}} membres dans ce groupe</p>
-    <h3>{{artist.genre.name}}</h3>
+    <h3><a href="{{path('genres',{id : artist.genre.id})}}">{{artist.genre.name}}</a></h3>
+
+</div>
 
 
 
