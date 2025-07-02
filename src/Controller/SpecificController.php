@@ -2,6 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Album;
+use App\Entity\Artist;
+use App\Entity\Genre;
 use App\Repository\AlbumRepository;
 use App\Repository\ArtistRepository;
 use App\Repository\GenreRepository;
@@ -12,9 +15,8 @@ use Symfony\Component\Routing\Attribute\Route;
 final class SpecificController extends AbstractController
 {
     #[Route('/artists/{id}', name: 'artists')]
-    public function artists(ArtistRepository $artistRepository,int $id): Response
+    public function artists(Artist $artist): Response
     {
-        $artist = $artistRepository->find($id);
         return $this->render('specific/artists.html.twig', [
             'controller_name' => 'SpecificController',
             'artist' => $artist
@@ -22,9 +24,8 @@ final class SpecificController extends AbstractController
     }
 
     #[Route('/albums/{id}', name: 'albums')]
-    public function albums(AlbumRepository $albumRepository,int $id): Response
+    public function albums(Album $album): Response
     {
-        $album = $albumRepository->find($id);
         return $this->render('specific/albums.html.twig', [
             'controller_name' => 'SpecificController',
             'album' => $album
@@ -32,9 +33,8 @@ final class SpecificController extends AbstractController
     }
 
     #[Route('/genres/{id}', name: 'genres')]
-    public function genres(GenreRepository $genreRepository,int $id): Response
+    public function genres(Genre $genre): Response
     {
-        $genre = $genreRepository->find($id);
         return $this->render('specific/genres.html.twig', [
             'controller_name' => 'SpecificController',
             'genre'=>$genre

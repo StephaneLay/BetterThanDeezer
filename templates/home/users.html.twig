@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Userpage{% endblock %}
+
+{% block body %}
+
+<h1>Better Than Deezer</h1>
+<div>{{form(form)}}
+</div>
+
+<ul >
+{% for users in users %}
+<li>{{user.name}}</li>
+
+{% endfor %}
+</ul>
+{% endblock %}
